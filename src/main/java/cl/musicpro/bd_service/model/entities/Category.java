@@ -27,7 +27,7 @@ public class Category {
     @Column (name = "name")
     private String name;
 
-    @OneToMany(mappedBy = "productByCategoryId_fk", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "productByCategoryId_fk", fetch = FetchType.LAZY)
     @Column(nullable = true)
     @JsonManagedReference
     private Collection<Product> productByCategoryId;
