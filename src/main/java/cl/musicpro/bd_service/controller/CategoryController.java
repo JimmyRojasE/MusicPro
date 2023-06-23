@@ -2,9 +2,9 @@ package cl.musicpro.bd_service.controller;
 
 import cl.musicpro.bd_service.model.dto.CategoryDTO;
 import cl.musicpro.bd_service.model.dto.CommonResponseDTO;
-import cl.musicpro.bd_service.model.dto.ProductDTO;
+
 import cl.musicpro.bd_service.services.CategoryService;
-import cl.musicpro.bd_service.services.ProductService;
+
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
