@@ -51,7 +51,7 @@ public class Product {
     @Column(name = "category_id")
     private int category_id;
 
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "category_id", referencedColumnName = "category_id", insertable =false, updatable = false)
     @JsonBackReference 
     private Category productByCategoryId_fk;

@@ -35,7 +35,7 @@ public class ProductController {
         return productService.addProduct(productoDTO);
     }
 
-    @PostMapping(path = "/product/edit", produces = MediaType.APPLICATION_JSON_VALUE , consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PutMapping(path = "/product/edit", produces = MediaType.APPLICATION_JSON_VALUE , consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<CommonResponseDTO>EditProduct(@RequestBody ProductDTO productoDTO){
         log.info("[editProduct]Request: "+productoDTO.toString());
         return productService.editProduct(productoDTO);
